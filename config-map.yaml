@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: game-demo
   namespace: default
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
 data:
   # property-like keys; each key maps to a simple value
   player_initial_lives: "3"
